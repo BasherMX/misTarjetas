@@ -1,0 +1,9 @@
+# Cursor Rules for Mis Tarjetas
+
+- Project Name: Mis Tarjetas (Always use "Mis Tarjetas", never "FINANCIAS MX").
+- Architecture: React 19 + TypeScript + Dexie.js (IndexedDB Local-First).
+- Always use `import type { ... }` for type imports.
+- Mobile-First design: touch-friendly UI, embedded card buttons, no hover-only features.
+- Income deposits allowed ONLY in debit, cash, or savings accounts.
+- Confirmation `confirm(...)` mandatory before deleting any element in the system.
+- Time charts: continuous date range pre-population at $0.00 MXN.
