@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'pwa-512x512.svg', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png', 'apple-touch-icon.png'],
       manifest: {
         name: 'Mis Tarjetas - Finanzas Personales MXN',
         short_name: 'Mis Tarjetas',
@@ -21,14 +21,20 @@ export default defineConfig({
         orientation: 'portrait',
         icons: [
           {
-            src: 'pwa-512x512.svg',
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+          {
+            src: 'pwa-512x512.png',
             sizes: '512x512',
-            type: 'image/svg+xml',
+            type: 'image/png',
             purpose: 'any maskable',
           },
           {
             src: 'favicon.svg',
-            sizes: '192x192 512x512',
+            sizes: '512x512',
             type: 'image/svg+xml',
           },
         ],
